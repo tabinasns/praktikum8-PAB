@@ -1,6 +1,8 @@
+import React from "react";
 import { Box, HStack, Heading, Pressable, Text, VStack } from "@gluestack-ui/themed";
 import { useNavigation } from "@react-navigation/native";
 import { IconDelete, IconEdit } from "../../../assets";
+import { deleteNote } from "../../../actions/AuthAction";
 
 const ListNote = ({ judul, isi, tanggal, status, category, noteId }) => {
     const navigation = useNavigation();
